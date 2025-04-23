@@ -116,22 +116,42 @@
   }
 }
 
-@-webkit-keyframes bounce { 
-            0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
-            40% {-webkit-transform: translateY(-30px);} 
-            60% {-webkit-transform: translateY(-15px);} 
-         } 
-         
-         @keyframes bounce { 
-            0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
-            40% {transform: translateY(-30px);} 
-            60% {transform: translateY(-15px);} 
-         }
-         
-         .bounce { 
-            -webkit-animation-name: bounce; 
-            animation-name: bounce; 
-         }
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -160,11 +180,11 @@ body {
   pointer-events: none;
 }
 
-.m0{
-    margin: 0 !important;
+.m0 {
+  margin: 0 !important;
 }
-.p0{
-    padding: 0 !important;
+.p0 {
+  padding: 0 !important;
 }
 .overflow-wrap {
   overflow-x: hidden;
@@ -250,7 +270,7 @@ body {
 }
 
 .highlight {
-  color: #39ff14 ;
+  color: #39ff14;
 }
 
 .header {
@@ -388,12 +408,12 @@ nav .active {
   transition: 0.7s;
 }
 
-.m0{
-    margin: 0 !important;
+.m0 {
+  margin: 0 !important;
 }
 
-.p0{
-    padding: 0 !important;
+.p0 {
+  padding: 0 !important;
 }
 
 .modal-wrap {
@@ -748,15 +768,15 @@ section:nth-of-type(3) #gallery .mix .button:hover {
 }
 section:nth-of-type(3) #gallery .mix:nth-child(1) .card {
   background: url("../images/projects/icici.jpg") center center/contain;
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
 }
 section:nth-of-type(3) #gallery .mix:nth-child(2) .card {
   background: url("../images/projects/rustomjee.jpg") center center/contain;
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
 }
 section:nth-of-type(3) #gallery .mix:nth-child(3) .card {
   background: url("../images/projects/anarock.jpg") center center/contain;
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
 }
 section:nth-of-type(3) #gallery .mix:nth-child(4) .card {
   background: url("../images/projects/emaar.jpg") center center/contain;
@@ -896,8 +916,8 @@ section:nth-of-type(5) form {
   margin: 40px auto 0 auto;
   min-width: 95%;
 }
-section:nth-of-type(5) input[type=text],
-section:nth-of-type(5) input[type=email],
+section:nth-of-type(5) input[type="text"],
+section:nth-of-type(5) input[type="email"],
 section:nth-of-type(5) textarea {
   background: #1e242c;
   border: 0;
@@ -1050,12 +1070,12 @@ footer .footnote .highlight {
   }
 
   .slide,
-.carousel-wrap {
+  .carousel-wrap {
     height: 450px;
   }
 
   .mdi-chevron-left,
-.mdi-chevron-right {
+  .mdi-chevron-right {
     font-size: 25pt !important;
   }
 
@@ -1328,7 +1348,7 @@ footer .footnote .highlight {
 }
 .cd-container::after {
   /* clearfix */
-  content: '';
+  content: "";
   display: table;
   clear: both;
 }
@@ -1343,28 +1363,29 @@ html * {
   -moz-osx-font-smoothing: grayscale;
 }
 
-*, *:after, *:before {
+*,
+*:after,
+*:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-
-#cd-timeline>a {
+#cd-timeline > a {
   color: #acb7c0;
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
 }
 
-#cd-timeline>img {
+#cd-timeline > img {
   max-width: 100%;
 }
 
-#cd-timeline>h1, #cd-timeline>h2 {
+#cd-timeline > h1,
+#cd-timeline > h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
 }
-
 
 #cd-timeline {
   position: relative;
@@ -1374,7 +1395,7 @@ html * {
 }
 #cd-timeline::before {
   /* this is the vertical line */
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 18px;
@@ -1427,7 +1448,8 @@ html * {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px #ffffff, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 0 4px #ffffff, inset 0 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 .cd-timeline-img img {
   display: block;
@@ -1439,25 +1461,28 @@ html * {
   margin-left: -12px;
   margin-top: -12px;
 }
-.cd-timeline-img.dsm{
+.cd-timeline-img.dsm {
   background: #75ce66;
 }
-.cd-timeline-img.inv{
+.cd-timeline-img.inv {
   background: #c03b44;
 }
-.cd-timeline-img.vitru{
+.cd-timeline-img.vitru {
   background: #f0ca45;
 }
-.cd-timeline-img.quikr{
-  background: #1F51FF;
+.cd-timeline-img.quikr {
+  background: #1f51ff;
 }
-.cd-timeline-img.viztar{
-  background: #FFAD00;
+.cd-timeline-img.viztar {
+  background: #ffad00;
 }
-.cd-timeline-img.virtusa{
-  background: #FB48C4;
+.cd-timeline-img.virtusa {
+  background: #fb48c4;
 }
 
+.cd-timeline-img.eurowings {
+  background: #1cb84e;
+}
 
 @media only screen and (min-width: 1170px) {
   .cd-timeline-img {
@@ -1547,11 +1572,14 @@ html * {
 .cd-timeline-content h2 {
   color: #303e49;
 }
-.cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+.cd-timeline-content p,
+.cd-timeline-content .cd-read-more,
+.cd-timeline-content .cd-date {
   font-size: 13px;
   font-size: 0.8125rem;
 }
-.cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+.cd-timeline-content .cd-read-more,
+.cd-timeline-content .cd-date {
   display: inline-block;
 }
 .cd-timeline-content p {
@@ -1560,7 +1588,7 @@ html * {
 }
 .cd-timeline-content .cd-read-more {
   float: right;
-  padding: .8em 1em;
+  padding: 0.8em 1em;
   background: #acb7c0;
   color: #ffffff;
   border-radius: 0.25em;
@@ -1570,11 +1598,11 @@ html * {
 }
 .cd-timeline-content .cd-date {
   float: left;
-  padding: .8em 0;
-  opacity: .7;
+  padding: 0.8em 0;
+  opacity: 0.7;
 }
 .cd-timeline-content::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 16px;
   right: 100%;
@@ -1592,7 +1620,8 @@ html * {
     font-size: 16px;
     font-size: 1rem;
   }
-  .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+  .cd-timeline-content .cd-read-more,
+  .cd-timeline-content .cd-date {
     font-size: 14px;
     font-size: 0.875rem;
   }
@@ -1651,7 +1680,9 @@ html * {
 
 @media only screen and (min-width: 1170px) {
   /* inverse bounce effect on even content blocks */
-  .cssanimations .cd-timeline-block:nth-child(even) .cd-timeline-content.bounce-in {
+  .cssanimations
+    .cd-timeline-block:nth-child(even)
+    .cd-timeline-content.bounce-in {
     -webkit-animation: cd-bounce-2-inverse 0.6s;
     -moz-animation: cd-bounce-2-inverse 0.6s;
     animation: cd-bounce-2-inverse 0.6s;
